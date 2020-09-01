@@ -1,0 +1,25 @@
+package ru.mirea.lab1;
+import java.util.Scanner;
+public class puk5 {
+    public static void main(String[] args) {
+    Scanner s = new Scanner(System.in);
+                System.out.println("Введите число для рассчета факториала");
+    long f=1;
+    int p =1;
+    int o = s.nextInt();
+    int []massiv = new int[o];
+                if (o != 0 && o >0)
+    {
+        while (p <= o) {
+            f=f*p;
+            p++;
+        }
+        System.out.println("Факториал="+f);
+    }
+
+                        else {
+                    f = 1;
+                    System.out.println("Факториал =" + f);
+                }
+}
+}
