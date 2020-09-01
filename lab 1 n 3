@@ -1,0 +1,17 @@
+package ru.mirea.lab1;
+import java.util.Scanner;
+
+public class puk3 {
+    public static void main(String[] args) {
+        Scanner sw = new Scanner(System.in);
+        float b = 1;
+        float aa = 1;
+        float c;
+        System.out.println("Первые 10 цифр гармонического ряда =");
+        while (b < 10) {
+            c = aa / b;
+            b++;
+            System.out.println(c + "+");
+        }
+    }
+}
