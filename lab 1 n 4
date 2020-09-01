@@ -1,0 +1,20 @@
+package ru.mirea.lab1;
+import java.util.Random;
+import java.util.Scanner;
+import java.util.Arrays;
+public class puk4 {
+    public static void main(String[] args) {
+        System.out.println("Введите количество элементов массива");
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        Random m = new Random();
+        int mas[] = new int[n];
+        System.out.println("Случайный массив=");
+        for (int i = 0; i < n; i++) {
+            mas[i] = m.nextInt(101);
+            System.out.println(mas[i]);
+        }
+        Arrays.sort(mas);
+        System.out.println("Отсортированный массив =" + Arrays.toString(mas));
+    }
+}
