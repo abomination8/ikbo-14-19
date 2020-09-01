@@ -1,0 +1,172 @@
+package ru.mirea.lab1;
+
+class mother{
+            static String name = "Elena";
+            int years = 55;
+        }
+        class father{
+            static String name = "Sergey";
+            int years = 57;
+        }
+        class child{
+            static String name = "Vadim";
+            int years = 20;
+        }
+    class Tester {
+        boolean MotherTestInt(mother Mother) {
+
+            if(Mother.years != 0)
+
+            {
+
+                System.out.println(Mother.years);
+
+                return true;
+
+            }
+
+            else
+
+            {
+
+                System.out.println("TEST FAILED");
+
+                return false;
+
+            }
+
+        }
+
+        boolean MotherTestString(mother Mother)
+
+        {
+
+            if(!Mother.name.isEmpty())
+
+            {
+
+                System.out.println(Mother.name);
+
+                return true;
+
+            }
+
+            else
+
+            {
+
+                System.out.println("TEST FAILED");
+
+                return false;
+
+            }
+
+        }
+
+        boolean FatherTestInt(father Father) {
+
+            if(Father.years != 0)
+
+            {
+
+                System.out.println(Father.years);
+
+                return true;
+
+            }
+
+            else
+
+            {
+
+                System.out.println("TEST FAILED");
+
+                return false;
+
+            }
+
+        }
+
+        boolean FatherTestString(father Father)
+
+        {
+
+            if(!Father.name.isEmpty())
+
+            {
+
+                System.out.println(Father.name);
+
+                return true;
+
+            }
+
+            else
+
+            {
+
+                System.out.println("TEST FAILED");
+
+                return false;
+
+            }
+
+        } boolean ChildTestInt(child Child) {
+
+            if(Child.years != 0)
+
+            {
+
+                System.out.println(Child.years);
+
+                return true;
+
+            }
+
+            else
+
+            {
+
+                System.out.println("TEST FAILED");
+
+                return false;
+
+            }
+
+        }
+
+        boolean ChildTestString(child Child) {
+
+            if (!Child.name.isEmpty()) {
+
+                System.out.println(Child.name);
+
+                return true;
+
+            } else {
+
+                System.out.println("TEST FAILED");
+
+                return false;
+
+            }
+        }
+        }
+
+public class pr1 {
+    public static void main(String[] args) {
+        Tester test = new Tester();
+        mother mom = new mother();
+        father dad = new father();
+        child Child = new child();
+        mom.name.toString();
+        dad.name.toString();
+        child.name.toString();
+        test.MotherTestInt(mom);
+        test.MotherTestString(mom);
+        test.FatherTestInt(dad);
+        test.FatherTestString(dad);
+        test.ChildTestInt(Child);
+        test.ChildTestString(Child);
+    }
+}
