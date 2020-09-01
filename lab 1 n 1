@@ -1,0 +1,28 @@
+package ru.mirea.lab1;
+import java.util.Scanner;
+public class puk {
+    public static void main(String[] args) {
+        int Sum = 0;
+        int Sum2 = 0;
+        int Sum3 = 0;
+        Scanner s = new Scanner(System.in);
+        int[] a = new int[15];
+        int i = 0;
+        System.out.println("Введите элементы массива (5 значений)");
+        while (i < 2) {
+            a[i] = s.nextInt();
+            Sum = Sum + a[i];
+            i++;
+        }
+       for (i = 0; i < 2; i++) {
+           a[i] = s.nextInt();
+           Sum = Sum + a[i];
+       }
+       do {
+           a[i] = s.nextInt();
+            Sum = Sum + a[i];
+            i++;
+        } while (i < 2);
+        System.out.println("Сумма =" + Sum);
+    }
+}
